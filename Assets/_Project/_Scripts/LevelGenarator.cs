@@ -5,8 +5,6 @@ namespace TowerOfDefence.Level
     {
         [SerializeField]
         private GameObject tile1;
-
-
         private int[,] levelTilesArray =
         {
             {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -23,7 +21,6 @@ namespace TowerOfDefence.Level
         private void Start()
         {
             print("Start ");
-            //DoCreateLevel();
         }
 
         public void DoCreateLevel()
