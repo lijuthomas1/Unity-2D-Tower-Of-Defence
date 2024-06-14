@@ -10,6 +10,7 @@ namespace TowerOfDefence.Game
         [SerializeField] private List<Transform> pathPoint;
         private static LevelManager instance;
         public static LevelManager Instance => instance;
+        public List<Transform> PathPoints {  get { return pathPoint; } }
 
         private void Awake ()
         {
