@@ -4,20 +4,20 @@ using UnityEditor;
 namespace TowerOfDefence.Level
 {
 
-    [CustomEditor(typeof(LevelGenarator))]
-    public class LevelGenaratorEditor : Editor
+    [CustomEditor(typeof(LevelGenerator))]
+    public class LevelGeneratorEditor : Editor
     {
         public override void OnInspectorGUI()
         {
             DrawDefaultInspector();
-            LevelGenarator levelGenarator = (LevelGenarator)target;
+            LevelGenerator LevelGenerator = (LevelGenerator)target;
             if (GUILayout.Button("Clear Level"))
             {
-                levelGenarator.ClearLevel();
+                LevelGenerator.ClearLevel();
             }
             if (GUILayout.Button("Create Level"))
             {
-                levelGenarator.DoCreateLevel();
+                LevelGenerator.DoCreateLevel();
             }
         }
     }

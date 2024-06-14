@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace TowerOfDefence.Level
 {
-    public class LevelGenarator : MonoBehaviour
+    public class LevelGenerator : MonoBehaviour
     {
         [SerializeField]
         private Transform gridParent;
