@@ -64,6 +64,7 @@ namespace TowerOfDefence.Level
             var initXPos = levelTilesArray.GetLength(1) / 2.0f;
             Vector3 tilePos = new Vector3(-(initXPos - 0.5f), (initYPos - 0.5f), 0);
             //print("initYPos " + initYPos + " initXPos " + initXPos);
+            int siblingIndex = 0;
             for (int i = 0; i < levelTilesArray.GetLength(0); i++)
             {
                 for (int j = 0; j < levelTilesArray.GetLength(1); j++)
@@ -74,14 +75,14 @@ namespace TowerOfDefence.Level
                     {
                         GameObject tile = Instantiate(tilesList[tileValue], tilePos, Quaternion.identity) as GameObject;
                         
-                        if(tileValue > 1)
-                        {
-                            tile.transform.SetParent(pathParent.transform);
-                        }
-                        else
-                        {
-                            tile.transform.SetParent(gridParent.transform);
-                        }
+                        if(tileValue > 0) tile.transform.SetParent(pathParent.transform);
+
+                        else tile.transform.SetParent(gridParent.transform);
+                        tile.transform.SetSiblingIndex(siblingIndex);
+                        if (tileValue == 2) tile.transform.SetAsFirstSibling();
+                        if (tileValue == 3) tile.transform.SetAsLastSibling();
+
+                        siblingIndex++;
                     }
                     tilePos.x += 1;
                 }
