@@ -11,6 +11,10 @@ namespace TowerOfDefence.Level
         {
             DrawDefaultInspector();
             LevelGenarator levelGenarator = (LevelGenarator)target;
+            if (GUILayout.Button("Clear Level"))
+            {
+                levelGenarator.ClearLevel();
+            }
             if (GUILayout.Button("Create Level"))
             {
                 levelGenarator.DoCreateLevel();
