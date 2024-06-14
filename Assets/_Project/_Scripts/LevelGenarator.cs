@@ -1,33 +1,37 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 namespace TowerOfDefence.Level
 {
     public class LevelGenarator : MonoBehaviour
     {
         [SerializeField]
+        private Transform gridParent;
+        [SerializeField]
+        private Transform pathParent;
+        [SerializeField]
         private GameObject[] tilesList;
+
+        // 0 - empty
+        // 1 - grass
+        // 2 - start
+        // 3 - path
+        // 4 - end
         private int[,] levelTilesArray =
         {
-            {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-            {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-            {1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-            {1,1,0,1,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1},
-            {0,0,0,1,0,1,0,1,1,1,0,1,1,1,1,0,0,0,0,0,0},
-            {1,1,1,1,0,1,0,0,0,1,0,1,1,1,1,0,1,1,1,1,1},
-            {1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,0,1,1,1,1,1},
-            {1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1},
-            {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-            {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
+            {0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
+            {0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
+            {0,1,3,0,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
+            {0,1,0,1,0,1,3,0,0,0,3,1,1,1,1,1,1,1,1,1,0},
+            {2,0,3,1,0,1,0,1,1,1,0,1,1,1,1,3,0,0,0,0,4},
+            {0,1,1,1,0,1,3,0,3,1,0,1,1,1,1,0,1,1,1,1,0},
+            {0,1,1,1,0,1,1,1,0,1,0,1,1,1,1,0,1,1,1,1,0},
+            {0,1,1,1,3,0,0,0,3,1,3,0,0,0,0,3,1,1,1,1,0},
+            {0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
+            {0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0}
 
         };
 
-        //private int[,] levelTilesArray =
-        //{
-        //    {1,1,1,1,1},
-        //    {0,0,0,1,1},
-        //    {1,1,0,0,1},
-        //    {1,1,1,0,1},
-        //};
         private void Start()
         {
             print("Start ");
@@ -41,7 +45,11 @@ namespace TowerOfDefence.Level
         IEnumerator WaitForCreateLevel()
         {
             ClearLevel();
-            while (transform.childCount > 0)
+            while (gridParent.childCount > 0)
+            {
+                yield return null;
+            }
+            while (pathParent.childCount > 0)
             {
                 yield return null;
             }
@@ -65,7 +73,15 @@ namespace TowerOfDefence.Level
                     if (tileValue >= 0)
                     {
                         GameObject tile = Instantiate(tilesList[tileValue], tilePos, Quaternion.identity) as GameObject;
-                        tile.transform.SetParent(this.transform);
+                        
+                        if(tileValue > 1)
+                        {
+                            tile.transform.SetParent(pathParent.transform);
+                        }
+                        else
+                        {
+                            tile.transform.SetParent(gridParent.transform);
+                        }
                     }
                     tilePos.x += 1;
                 }
@@ -76,9 +92,13 @@ namespace TowerOfDefence.Level
 
         public void ClearLevel()
         {
-            while (transform.childCount > 0)
+            while (gridParent.childCount > 0)
             {
-                DestroyImmediate(transform.GetChild(0).gameObject);
+                DestroyImmediate(gridParent.GetChild(0).gameObject);
+            }
+            while (pathParent.childCount > 0)
+            {
+                DestroyImmediate(pathParent.GetChild(0).gameObject);
             }
         }
     }
