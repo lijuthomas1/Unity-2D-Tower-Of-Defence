@@ -9,10 +9,17 @@ namespace TowerOfDefence.Game
         private int targetIndex = 0;
         private float distatance = 0;
         private Vector3 direction = Vector3.zero;
+
         private void Start()
         {
             ResetPathTarget();
         }
+        private void OnEnable()
+        {
+            ResetPathTarget();
+        }
+        
+    
 
         private void SetCurrentTargetPoint()
         {
@@ -31,6 +38,15 @@ namespace TowerOfDefence.Game
             targetIndex++;
             SetCurrentTargetPoint();
         }
+
+        private void LookTowardsTarget()
+        {
+            if(target == null)  return;
+            Vector3 look = transform.InverseTransformPoint(target.position);
+            float angle = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90 ;
+
+            transform.Rotate(0,0, angle);
+        }
         private void ResetPathTarget()
         {
             targetIndex = 0;
@@ -40,10 +56,18 @@ namespace TowerOfDefence.Game
         private void Update()
         {
             if (target == null) return;
-            if (Vector3.Distance(transform.position, target.position) < 0.01) FindNextTarget();
+            if (Vector3.Distance(transform.position, target.position) < 0.1)
+            {
+                FindNextTarget();
+                LookTowardsTarget();
+            }
 
-            if (target == null) return;
-            direction = (target.position - this.transform.position).normalized; 
+            if (target == null)
+            {   this.gameObject.SetActive(false);
+                return;
+            }
+                
+            direction = (target.position - this.transform.position).normalized;
             
             this.transform.position += direction * Time.deltaTime;
         }
