@@ -6,13 +6,13 @@ namespace TowerOfDefence.Level
     public class EnemySpawnInfo : ScriptableObject
     {
        public List<WaveInfo> waveInfoList = new List<WaveInfo>();
-       public int gapBetweenWaves;
+        public int nextWaveTime;
     }
 
     [System.Serializable]
     public struct WaveInfo
     {
         public float spawnTimeInSecond;
-        public int maxEnemyCount;
+        public int maxEnemyCount; 
     }
 }
