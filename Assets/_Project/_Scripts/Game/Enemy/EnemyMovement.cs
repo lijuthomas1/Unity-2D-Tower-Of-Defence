@@ -7,16 +7,45 @@ namespace TowerOfDefence.Game
     {
         private Transform target;
         private int targetIndex = 0;
+        private float distatance = 0;
+        private Vector3 direction = Vector3.zero;
         private void Start()
         {
-            SetFirstPathTarget();
+            ResetPathTarget();
         }
 
-        // Update is called once per frame
-        private void SetFirstPathTarget()
+        private void SetCurrentTargetPoint()
+        {
+            if (LevelManager.Instance.PathPoints.Count > targetIndex)
+            {
+                target = LevelManager.Instance.PathPoints[targetIndex];
+            }
+            else
+            {
+                target = null;
+            }
+        }
+
+        private void FindNextTarget()
+        {
+            targetIndex++;
+            SetCurrentTargetPoint();
+        }
+        private void ResetPathTarget()
         {
             targetIndex = 0;
-            target = LevelManager.Instance.PathPoints[targetIndex];
+            SetCurrentTargetPoint();
+        }
+
+        private void Update()
+        {
+            if (target == null) return;
+            if (Vector3.Distance(transform.position, target.position) < 0.01) FindNextTarget();
+
+            if (target == null) return;
+            direction = (target.position - this.transform.position).normalized; 
+            
+            this.transform.position += direction * Time.deltaTime;
         }
     }
 }
