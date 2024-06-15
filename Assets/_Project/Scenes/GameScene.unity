@@ -17072,6 +17072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5257d430e95f3274c80f008aa5899d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waveInfo: {fileID: 11400000, guid: af8dc4d3b29f8764cb3ea42d6d92a73a, type: 2}
+  enemyObject: {fileID: 838222210576844323, guid: 628f97999b1ad1443b07ee1bfd9aee4e, type: 3}
 --- !u!1 &2114645409
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ namespace TowerOfDefence.Level
     public class EnemySpawnInfo : ScriptableObject
     {
        public List<WaveInfo> waveInfoList = new List<WaveInfo>();
+       public int gapBetweenWaves;
     }
 
     [System.Serializable]

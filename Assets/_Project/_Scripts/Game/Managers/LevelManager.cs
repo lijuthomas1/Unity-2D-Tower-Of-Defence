@@ -11,7 +11,7 @@ namespace TowerOfDefence.Game
         private static LevelManager instance;
         public static LevelManager Instance => instance;
         public List<Transform> PathPoints {  get { return pathPoint; } }
-
+        public Transform GetStartPoint{ get { return startPoint; } }
         private void Awake ()
         {
             instance = this;

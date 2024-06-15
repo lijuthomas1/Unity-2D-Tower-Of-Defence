@@ -51,6 +51,7 @@ namespace TowerOfDefence.Game
         {
             targetIndex = 0;
             SetCurrentTargetPoint();
+            LookTowardsTarget();
         }
 
         private void Update()

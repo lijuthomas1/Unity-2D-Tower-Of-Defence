@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Wave-Level1
   m_EditorClassIdentifier: 
   waveInfoList:
-  - spawnTimeInSecond: 1
+  - spawnTimeInSecond: 3
     maxEnemyCount: 8
-  - spawnTimeInSecond: 0.75
+  - spawnTimeInSecond: 2
     maxEnemyCount: 10
-  - spawnTimeInSecond: 0.5
+  - spawnTimeInSecond: 1
     maxEnemyCount: 14
+  gapBetweenWaves: 3
