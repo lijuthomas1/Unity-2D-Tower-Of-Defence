@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,8 @@ namespace TowerOfDefence.Game
         private float bulletSpeed = 3f;
         [SerializeField]
         private LayerMask targetMask;
+        [SerializeField]
+        private int damageValue = 20;
         private Transform target;
         private bool isTargetAssigned = false;
 
@@ -34,5 +37,18 @@ namespace TowerOfDefence.Game
             transform.position += direction * Time.deltaTime * bulletSpeed;
         }
 
+        
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            //Debug.Log("Collision Enter With "+ collision.gameObject.name);
+            EnemyHealth health = collision.gameObject.GetComponent<EnemyHealth>();
+            Debug.Log("Collision Enter With " + collision.gameObject.name +" --"+ health);
+            if (health != null)
+            {
+                Debug.Log("Do Damage");
+                health.DoDamage(damageValue);
+            }
+            gameObject.SetActive(false);
+        }
     }
 }

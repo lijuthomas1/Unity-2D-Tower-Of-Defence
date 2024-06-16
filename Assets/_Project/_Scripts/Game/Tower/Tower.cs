@@ -26,10 +26,8 @@ namespace TowerOfDefence.Game
         private void FixedUpdate()
         {
             if (targetEnemy != null)
-            {
-                if (!targetEnemy.gameObject.activeInHierarchy) targetEnemy = null;
-                if (Vector3.Distance(transform.position, targetEnemy.position) > towerRange) targetEnemy = null;
-            }
+                if (!targetEnemy.gameObject.activeInHierarchy || Vector3.Distance(transform.position, targetEnemy.position) > towerRange) targetEnemy = null;
+           
 
             if (targetEnemy == null) FindTargetEnemy();
         }
@@ -63,7 +61,7 @@ namespace TowerOfDefence.Game
         {
             bulletTime += Time.deltaTime;
             if (targetEnemy == null) return;
-            
+
             if (bulletTime > bulletFireTime)
             {
                 DoFire();
@@ -73,8 +71,8 @@ namespace TowerOfDefence.Game
 
         private void DoFire()
         {
-            if (targetEnemy != null) ;
-            GameObject bullet  = Instantiate(bulletPrefab,bulletInitPoint.position,Quaternion.identity);
+            if (targetEnemy == null) return;
+            GameObject bullet = Instantiate(bulletPrefab, bulletInitPoint.position, Quaternion.identity);
             bullet.GetComponent<Bullet>().SetTarget(targetEnemy);
         }
     }

@@ -113,7 +113,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 7894419850717056688}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -122,7 +122,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &4881515196596175958
 MonoBehaviour:
@@ -140,3 +140,4 @@ MonoBehaviour:
   targetMask:
     serializedVersion: 2
     m_Bits: 64
+  damageValue: 20
