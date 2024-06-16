@@ -15,6 +15,13 @@ namespace TowerOfDefence.Game
         private LayerMask enemyMask;
         [SerializeField]
         private Transform tankGun;
+        [SerializeField]
+        private Transform bulletInitPoint;
+        [SerializeField]
+        private float bulletFireTime = 2.0f;
+        [SerializeField]
+        private GameObject bulletPrefab = null;
+        private float bulletTime = 0.0f;
         private Transform targetEnemy;
         private void FixedUpdate()
         {
@@ -29,6 +36,7 @@ namespace TowerOfDefence.Game
         private void Update()
         {
             LookAtEnemy();
+            CheckBulletFire();
         }
         private void OnDrawGizmos()
         {
@@ -49,6 +57,25 @@ namespace TowerOfDefence.Game
             Vector3 look = tankGun.transform.InverseTransformPoint(targetEnemy.position);
             float angle = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90;
             tankGun.transform.Rotate(0, 0, angle);
+        }
+
+        private void CheckBulletFire()
+        {
+            bulletTime += Time.deltaTime;
+            if (targetEnemy == null) return;
+            
+            if (bulletTime > bulletFireTime)
+            {
+                DoFire();
+                bulletTime = 0;
+            }
+        }
+
+        private void DoFire()
+        {
+            if (targetEnemy != null) ;
+            GameObject bullet  = Instantiate(bulletPrefab,bulletInitPoint.position,Quaternion.identity);
+            bullet.GetComponent<Bullet>().SetTarget(targetEnemy);
         }
     }
 }

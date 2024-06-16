@@ -13735,18 +13735,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4181022624539430638, guid: c50dcd7650b2e0d4ca231501eb0d96ea, type: 3}
-      propertyPath: tankGun
-      value: 
-      objectReference: {fileID: 2055087737}
-    - target: {fileID: 4181022624539430638, guid: c50dcd7650b2e0d4ca231501eb0d96ea, type: 3}
-      propertyPath: towerRange
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4181022624539430638, guid: c50dcd7650b2e0d4ca231501eb0d96ea, type: 3}
-      propertyPath: enemyMask.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
     - target: {fileID: 8143770489511220768, guid: c50dcd7650b2e0d4ca231501eb0d96ea, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -17047,11 +17035,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &2055087737 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8143770488603514199, guid: c50dcd7650b2e0d4ca231501eb0d96ea, type: 3}
-  m_PrefabInstance: {fileID: 1708135490}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2063942046
 GameObject:
   m_ObjectHideFlags: 0
