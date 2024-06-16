@@ -42,11 +42,10 @@ namespace TowerOfDefence.Game
 
         private void OnWaveEnd()
         {
-            print("OnWaveEnd");
-
             if (nextWaveAutoCouroutine != null) StopCoroutine(nextWaveAutoCouroutine);
             if (currentWaveIndex >= waveInfo.waveInfoList.Count) return;
-            nextWaveAutoCouroutine = WaitForNextWave(waveInfo.nextWaveTime);
+            float nextWaveTime = (currentWaveInfo.maxEnemyCount * currentWaveInfo.spawnTimeInSecond) + waveInfo.nextWaveTime;
+            nextWaveAutoCouroutine = WaitForNextWave(nextWaveTime);
             StartCoroutine(nextWaveAutoCouroutine);
         }
 
