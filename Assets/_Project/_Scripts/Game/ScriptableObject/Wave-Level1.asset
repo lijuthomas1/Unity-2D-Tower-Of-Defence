@@ -19,4 +19,4 @@ MonoBehaviour:
     maxEnemyCount: 10
   - spawnTimeInSecond: 1
     maxEnemyCount: 14
-  nextWaveTime: 15
+  nextWaveTime: 12
