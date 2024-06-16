@@ -50,5 +50,6 @@ namespace TowerOfDefence.Game
             }
             gameObject.SetActive(false);
         }
+        
     }
 }

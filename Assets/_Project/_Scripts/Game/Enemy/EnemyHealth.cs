@@ -5,6 +5,7 @@ namespace TowerOfDefence.Game
 {
     public class EnemyHealth : MonoBehaviour
     {
+        [SerializeField] private int bonusCurrency = 30;
         [SerializeField] private int maxHealth = 20;
         private int currentHealth = 0;
         private void OnEnable()
@@ -16,7 +17,12 @@ namespace TowerOfDefence.Game
         {
             print("take " + damage);
             currentHealth -= damage;
-            if (currentHealth <= 0) gameObject.SetActive(false);
+
+            if (currentHealth <= 0)
+            {
+                LevelManager.Instance.IncreaseCurrency(bonusCurrency);
+                gameObject.SetActive(false);
+            }
         }
     }
 }
