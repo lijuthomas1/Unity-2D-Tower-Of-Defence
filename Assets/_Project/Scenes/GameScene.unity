@@ -13739,6 +13739,10 @@ PrefabInstance:
       propertyPath: towerRange
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4181022624539430638, guid: c50dcd7650b2e0d4ca231501eb0d96ea, type: 3}
+      propertyPath: enemyMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 8143770489511220768, guid: c50dcd7650b2e0d4ca231501eb0d96ea, type: 3}
       propertyPath: m_RootOrder
       value: 4
