@@ -30,7 +30,7 @@ namespace TowerOfDefence.Game
 
         private void OnMouseDown()
         {
-            //print(LevelManager.Instance.IsMouseOverUI);
+            //// print(LevelManager.Instance.IsMouseOverUI);
            
             if(towerObject != null)
             {
@@ -42,7 +42,7 @@ namespace TowerOfDefence.Game
             TowerInfo towerInfo = TowerManager.Instance.GetSelectedTower();
             if (towerInfo.price > LevelManager.Instance.GetCurrencyValue())
             {
-                print("Not enough currency");
+                // print("Not enough currency");
                 return;
             }
             

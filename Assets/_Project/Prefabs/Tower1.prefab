@@ -674,7 +674,6 @@ GameObject:
   - component: {fileID: -7090285040630200861}
   - component: {fileID: 2151423939131472063}
   - component: {fileID: 6258562420107157616}
-  - component: {fileID: 5882463725010876154}
   m_Layer: 6
   m_Name: Tower1
   m_TagString: Untagged
@@ -764,42 +763,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeUI: {fileID: 5301380604453470373}
+  upgradeBtn: {fileID: 6338119707499982222}
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
   tankGun: {fileID: 3869587882477665219}
   bulletInitPoint: {fileID: 7845016220647647333}
   towerUpgradeInfo:
-  - towerRange: 3
+  - towerRange: 1
     bulletFireTime: 3
     bulletDamage: 20
     bulletSpeed: 2
-    price: 150
+    price: 100
   - towerRange: 2.5
     bulletFireTime: 2.5
     bulletDamage: 30
     bulletSpeed: 3
-    price: 180
+    price: 120
   - towerRange: 3
     bulletFireTime: 2
     bulletDamage: 40
     bulletSpeed: 5
-    price: 200
+    price: 150
   bulletPrefab: {fileID: 7894419850717056688, guid: 26f82a47bb11e7543b49aad98db54d11, type: 3}
---- !u!114 &5882463725010876154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6579606126996769142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8bcd68f4d647914fb289cf92b7de84d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bonusCurrency: 30
-  maxHealth: 20
 --- !u!1 &7845016220647647332
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +934,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 3851935166433634464}
   m_OnClick:
     m_PersistentCalls:

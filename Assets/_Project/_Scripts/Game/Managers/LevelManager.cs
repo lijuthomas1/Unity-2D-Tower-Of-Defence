@@ -19,6 +19,7 @@ namespace TowerOfDefence.Game
         public int GetCurrencyValue() { return currency; }
 
         public static event Action<int> OnCurrencyChange;
+        public static event Action OnEnemyDead;
 
         private bool isMouseOnUI = false;
         
@@ -61,6 +62,11 @@ namespace TowerOfDefence.Game
                 return false;
             }
             
+        }
+
+        public void UpdateEnemyDead()
+        {
+            OnEnemyDead?.Invoke();
         }
         
     }

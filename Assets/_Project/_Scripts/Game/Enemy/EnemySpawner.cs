@@ -17,15 +17,19 @@ namespace TowerOfDefence.Game
         private int currentEnemyIndex = 0;
         private IEnumerator nextWaveAutoCouroutine;
         private IEnumerator currentWaveCouroutine;
+        
 
+        private float remainingEnemies = 0;
         private void Start()
         {
             StartWave();
+            LevelManager.OnEnemyDead += EnemyDead;
         }
         private void StartWave()
         {
             if (currentWaveIndex >= waveInfo.waveInfoList.Count) return;
             currentWaveInfo = waveInfo.waveInfoList[currentWaveIndex];
+            remainingEnemies += currentWaveInfo.maxEnemyCount;
             currentWaveCouroutine = WaitForWave();
             StartCoroutine(currentWaveCouroutine);
         }
@@ -68,7 +72,7 @@ namespace TowerOfDefence.Game
                 yield return new WaitForSeconds(currentWaveInfo.spawnTimeInSecond);
                 CreateEnemy();
                 currentEnemyIndex++;
-                // print("Here");
+                // // print("Here");
             }
             yield return null;
             OnWaveEnd();
@@ -77,6 +81,15 @@ namespace TowerOfDefence.Game
         private void CreateEnemy()
         {
             Instantiate(enemyObject, LevelManager.Instance.GetStartPoint.position, Quaternion.identity);
+        }
+
+        private void EnemyDead()
+        {
+            print("EnemyDead");
+            remainingEnemies--;
+            if(remainingEnemies == 0) {
+                StartNextWave();
+            }
         }
 
     }

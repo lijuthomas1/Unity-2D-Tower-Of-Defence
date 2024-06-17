@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using System;
 using static UnityEngine.GraphicsBuffer;
+using UnityEngine.UI;
 
 namespace TowerOfDefence.Game
 {
@@ -11,6 +12,8 @@ namespace TowerOfDefence.Game
     {
         [SerializeField]
         private GameObject upgradeUI;
+        [SerializeField]
+        private Button upgradeBtn;
         [SerializeField]
         private LayerMask enemyMask;
         [SerializeField]
@@ -24,6 +27,11 @@ namespace TowerOfDefence.Game
         private float bulletTime = 0.0f;
         private Transform targetEnemy;
         private int towerLevelIndex = 0;
+
+        private void OnEnable()
+        {
+            upgradeBtn.interactable = true;
+        }
         private void FixedUpdate()
         {
             if (targetEnemy != null)
@@ -42,10 +50,10 @@ namespace TowerOfDefence.Game
         }
         private void FindTargetEnemy()
         {
-            //print("FindTargetEnemy");
+            //// print("FindTargetEnemy");
             RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, towerUpgradeInfo[towerLevelIndex].towerRange, transform.forward, towerUpgradeInfo[towerLevelIndex].towerRange, enemyMask);
             if (hits.Length > 0) targetEnemy = hits[0].transform;
-            //if (targetEnemy != null) print("target " + targetEnemy.name);
+            //if (targetEnemy != null) // print("target " + targetEnemy.name);
         }
 
         private void LookAtEnemy()
@@ -76,6 +84,11 @@ namespace TowerOfDefence.Game
             bullet.GetComponent<Bullet>().SetBulletValue(towerUpgradeInfo[towerLevelIndex].bulletDamage, towerUpgradeInfo[towerLevelIndex].bulletSpeed);
         }
 
+        private void CheckAndDisableUpgradeBtn()
+        {
+            upgradeBtn.interactable = (towerLevelIndex >= towerUpgradeInfo.Length);
+        }
+
         public void OpenUpgradeUI()
         {
             upgradeUI.SetActive(true);
@@ -88,7 +101,12 @@ namespace TowerOfDefence.Game
 
         public void OnUpgradeClick()
         {
-
+            //CheckAndDisableUpgradeBtn();
+            if (towerLevelIndex >= towerUpgradeInfo.Length) return;
+            if(!LevelManager.Instance.CheckAndPurchaseTower(towerUpgradeInfo[towerLevelIndex].price)) return;
+            towerLevelIndex++;
+            CloseUpgradeUI();
+            Debug.Log("towerLevelIndex"+ towerLevelIndex);
         }
         public void OnCloseClick()
         {

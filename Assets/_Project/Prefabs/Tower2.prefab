@@ -570,7 +570,6 @@ GameObject:
   - component: {fileID: 6825295906242323130}
   - component: {fileID: 6825295906242323131}
   - component: {fileID: 1565519319782865524}
-  - component: {fileID: 1351505730508123390}
   m_Layer: 6
   m_Name: Tower2
   m_TagString: Untagged
@@ -660,6 +659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeUI: {fileID: 788551357453556385}
+  upgradeBtn: {fileID: 1483567266007349130}
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
@@ -670,32 +670,18 @@ MonoBehaviour:
     bulletFireTime: 3
     bulletDamage: 20
     bulletSpeed: 2
-    price: 150
+    price: 200
   - towerRange: 2.5
     bulletFireTime: 2.5
     bulletDamage: 30
     bulletSpeed: 3
-    price: 180
+    price: 250
   - towerRange: 3
     bulletFireTime: 2
     bulletDamage: 40
     bulletSpeed: 5
-    price: 200
+    price: 300
   bulletPrefab: {fileID: 7894419850717056688, guid: 26f82a47bb11e7543b49aad98db54d11, type: 3}
---- !u!114 &1351505730508123390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6825295906242323129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8bcd68f4d647914fb289cf92b7de84d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bonusCurrency: 30
-  maxHealth: 20
 --- !u!1 &8301808580237351816
 GameObject:
   m_ObjectHideFlags: 0
