@@ -12,29 +12,22 @@ namespace TowerOfDefence.Game
         [SerializeField]
         private GameObject upgradeUI;
         [SerializeField]
-        private float towerRange = 2f;
-        [SerializeField]
         private LayerMask enemyMask;
         [SerializeField]
         private Transform tankGun;
         [SerializeField]
         private Transform bulletInitPoint;
         [SerializeField]
-        private float bulletFireTime = 2.0f;
-        [SerializeField]
-        private int bulletDamage = 20;
-        [SerializeField]
-        private int bulletSpeed = 20;
+        private TowerUpgradeInfo[] towerUpgradeInfo;
         [SerializeField]
         private GameObject bulletPrefab = null;
         private float bulletTime = 0.0f;
         private Transform targetEnemy;
+        private int towerLevelIndex = 0;
         private void FixedUpdate()
         {
             if (targetEnemy != null)
-                if (!targetEnemy.gameObject.activeInHierarchy || Vector3.Distance(transform.position, targetEnemy.position) > towerRange) targetEnemy = null;
-           
-
+                if (!targetEnemy.gameObject.activeInHierarchy || Vector3.Distance(transform.position, targetEnemy.position) > towerUpgradeInfo[towerLevelIndex].towerRange) targetEnemy = null;
             if (targetEnemy == null) FindTargetEnemy();
         }
         private void Update()
@@ -45,12 +38,12 @@ namespace TowerOfDefence.Game
         private void OnDrawGizmos()
         {
             Handles.color = Color.red;
-            Handles.DrawWireDisc(transform.position, transform.forward, towerRange);
+            Handles.DrawWireDisc(transform.position, transform.forward, towerUpgradeInfo[towerLevelIndex].towerRange);
         }
         private void FindTargetEnemy()
         {
             //print("FindTargetEnemy");
-            RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, towerRange, transform.forward, towerRange, enemyMask);
+            RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, towerUpgradeInfo[towerLevelIndex].towerRange, transform.forward, towerUpgradeInfo[towerLevelIndex].towerRange, enemyMask);
             if (hits.Length > 0) targetEnemy = hits[0].transform;
             //if (targetEnemy != null) print("target " + targetEnemy.name);
         }
@@ -68,7 +61,7 @@ namespace TowerOfDefence.Game
             bulletTime += Time.deltaTime;
             if (targetEnemy == null) return;
 
-            if (bulletTime > bulletFireTime)
+            if (bulletTime > towerUpgradeInfo[towerLevelIndex].bulletFireTime)
             {
                 DoFire();
                 bulletTime = 0;
@@ -80,7 +73,7 @@ namespace TowerOfDefence.Game
             if (targetEnemy == null) return;
             GameObject bullet = Instantiate(bulletPrefab, bulletInitPoint.position, Quaternion.identity);
             bullet.GetComponent<Bullet>().SetTarget(targetEnemy);
-            bullet.GetComponent<Bullet>().SetBulletValue(bulletDamage, bulletSpeed);
+            bullet.GetComponent<Bullet>().SetBulletValue(towerUpgradeInfo[towerLevelIndex].bulletDamage, towerUpgradeInfo[towerLevelIndex].bulletSpeed);
         }
 
         public void OpenUpgradeUI()
@@ -90,7 +83,16 @@ namespace TowerOfDefence.Game
 
         public void CloseUpgradeUI()
         {
-            upgradeUI.SetActive(true);
+            upgradeUI.SetActive(false);
+        }
+
+        public void OnUpgradeClick()
+        {
+
+        }
+        public void OnCloseClick()
+        {
+            CloseUpgradeUI();
         }
     }
 }
