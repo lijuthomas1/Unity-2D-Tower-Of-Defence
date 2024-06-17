@@ -23,11 +23,18 @@ namespace TowerOfDefence.Game
         {
             this.target = target;
             isTargetAssigned = true;
-        } 
+        }
+        public void SetBulletValue(int damageValue,int bulletSpeed)
+        {
+            this.damageValue = damageValue;
+            this.bulletSpeed = bulletSpeed;
+        }
         private void Update()
         {
             if (!isTargetAssigned) return;
-            if (target == null) this.gameObject.SetActive(false);
+            if (target == null)
+                this.gameObject.SetActive(false);
+            else if (!target.gameObject.activeInHierarchy) this.gameObject.SetActive(false);
             FollowTarget();
         }
         private void    FollowTarget()

@@ -20,6 +20,10 @@ namespace TowerOfDefence.Game
         [SerializeField]
         private float bulletFireTime = 2.0f;
         [SerializeField]
+        private int bulletDamage = 20;
+        [SerializeField]
+        private int bulletSpeed = 20;
+        [SerializeField]
         private GameObject bulletPrefab = null;
         private float bulletTime = 0.0f;
         private Transform targetEnemy;
@@ -74,6 +78,7 @@ namespace TowerOfDefence.Game
             if (targetEnemy == null) return;
             GameObject bullet = Instantiate(bulletPrefab, bulletInitPoint.position, Quaternion.identity);
             bullet.GetComponent<Bullet>().SetTarget(targetEnemy);
+            bullet.GetComponent<Bullet>().SetBulletValue(bulletDamage, bulletSpeed);
         }
     }
 }
