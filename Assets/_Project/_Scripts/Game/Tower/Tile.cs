@@ -31,6 +31,12 @@ namespace TowerOfDefence.Game
         {
             if(tower != null) return;
             TowerInfo towerInfo = TowerManager.Instance.GetSelectedTower();
+            if (towerInfo.price > LevelManager.Instance.GetCurrencyValue())
+            {
+                print("Not enough currency");
+                return;
+            }
+            else LevelManager.Instance.CheckAndPurchaseTower(towerInfo.price);
             tower = Instantiate(towerInfo.prefab, transform.position, Quaternion.identity) as GameObject;
         }
 
