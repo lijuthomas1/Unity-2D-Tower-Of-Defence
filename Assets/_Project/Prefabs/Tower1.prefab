@@ -138,7 +138,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -2007813843, guid: 200e8a543af862640ba7531c51250faf, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 4181022624539430638}
   - component: {fileID: -4792484045169158044}
   m_Layer: 6
-  m_Name: Tank
+  m_Name: Tower1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -225,7 +225,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1150402684, guid: 200e8a543af862640ba7531c51250faf, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7075472, g: 0.5566928, b: 0.5566928, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -267,3 +267,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8bcd68f4d647914fb289cf92b7de84d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonusCurrency: 30
+  maxHealth: 20
