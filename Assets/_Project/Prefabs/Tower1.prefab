@@ -254,6 +254,8 @@ MonoBehaviour:
   tankGun: {fileID: 6443684720746124637}
   bulletInitPoint: {fileID: 1920108283}
   bulletFireTime: 2
+  bulletDamage: 20
+  bulletSpeed: 5
   bulletPrefab: {fileID: 7894419850717056688, guid: 26f82a47bb11e7543b49aad98db54d11, type: 3}
 --- !u!114 &-4792484045169158044
 MonoBehaviour:

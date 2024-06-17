@@ -7,7 +7,6 @@ namespace TowerOfDefence.Game
     {
         private Transform target;
         private int targetIndex = 0;
-        private float distatance = 0;
         private Vector3 direction = Vector3.zero;
 
         private void Start()

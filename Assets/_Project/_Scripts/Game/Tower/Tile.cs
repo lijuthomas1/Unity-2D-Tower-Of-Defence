@@ -30,8 +30,8 @@ namespace TowerOfDefence.Game
         private void OnMouseDown()
         {
             if(tower != null) return;
-            GameObject selectedTower = TowerManager.Instance.SelectedGameObject();
-            tower = Instantiate(selectedTower,transform.position, Quaternion.identity) as GameObject;
+            TowerInfo towerInfo = TowerManager.Instance.GetSelectedTower();
+            tower = Instantiate(towerInfo.prefab, transform.position, Quaternion.identity) as GameObject;
         }
 
 

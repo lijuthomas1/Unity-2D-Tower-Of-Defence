@@ -4,13 +4,14 @@ namespace TowerOfDefence.Game
 {
     public class TowerManager : MonoBehaviour
     {
+
+        
+        public TowerInfo[] towerInfos;
         private static TowerManager instance;
         public static TowerManager Instance
         {
             get { return instance; }
-        }
-        [SerializeField]
-        private GameObject[] towerPrefabs;
+        }        
 
         private int selectedTowerIndex = 0;
 
@@ -19,10 +20,11 @@ namespace TowerOfDefence.Game
              instance = this;
         }
 
-        public GameObject SelectedGameObject()
+        public TowerInfo GetSelectedTower()
         {
-            if (selectedTowerIndex < 0 || selectedTowerIndex >= towerPrefabs.Length) return null;
-            return towerPrefabs[selectedTowerIndex];
+            if (selectedTowerIndex < 0) selectedTowerIndex = 0;
+            if (selectedTowerIndex >= towerInfos.Length) selectedTowerIndex = towerInfos.Length-1;
+            return towerInfos[selectedTowerIndex];
         }
     }
 }

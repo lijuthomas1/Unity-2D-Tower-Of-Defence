@@ -255,6 +255,7 @@ MonoBehaviour:
   bulletInitPoint: {fileID: 1920108283}
   bulletFireTime: 1
   bulletDamage: 25
+  bulletSpeed: 10
   bulletPrefab: {fileID: 7894419850717056688, guid: 26f82a47bb11e7543b49aad98db54d11, type: 3}
 --- !u!114 &-4792484045169158044
 MonoBehaviour:
