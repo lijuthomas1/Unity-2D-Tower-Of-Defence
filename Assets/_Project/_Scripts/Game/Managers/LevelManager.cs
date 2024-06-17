@@ -19,6 +19,9 @@ namespace TowerOfDefence.Game
         public int GetCurrencyValue() { return currency; }
 
         public static event Action<int> OnCurrencyChange;
+
+        private bool isMouseOnUI = false;
+        
         private void Awake ()
         {
             instance = this;
@@ -32,6 +35,12 @@ namespace TowerOfDefence.Game
         {
             OnCurrencyChange?.Invoke(currency);
         }
+        public void UpdateMouseOverUI(bool isOverUI)
+        {
+            isMouseOnUI = isOverUI;
+        }
+
+        public bool IsMouseOverUI { get {  return isMouseOnUI; } }
         public void IncreaseCurrency (int amount)
         {
             if(amount <= 0) return;

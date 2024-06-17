@@ -29,6 +29,8 @@ namespace TowerOfDefence.Game
 
         private void OnMouseDown()
         {
+            print(LevelManager.Instance.IsMouseOverUI);
+            if(LevelManager.Instance.IsMouseOverUI) return;
             if(tower != null) return;
             TowerInfo towerInfo = TowerManager.Instance.GetSelectedTower();
             if (towerInfo.price > LevelManager.Instance.GetCurrencyValue())
@@ -36,6 +38,7 @@ namespace TowerOfDefence.Game
                 print("Not enough currency");
                 return;
             }
+            
             else LevelManager.Instance.CheckAndPurchaseTower(towerInfo.price);
             tower = Instantiate(towerInfo.prefab, transform.position, Quaternion.identity) as GameObject;
         }
