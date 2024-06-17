@@ -10,6 +10,8 @@ namespace TowerOfDefence.Game
     public class Tower : MonoBehaviour
     {
         [SerializeField]
+        private GameObject upgradeUI;
+        [SerializeField]
         private float towerRange = 2f;
         [SerializeField]
         private LayerMask enemyMask;
@@ -79,6 +81,16 @@ namespace TowerOfDefence.Game
             GameObject bullet = Instantiate(bulletPrefab, bulletInitPoint.position, Quaternion.identity);
             bullet.GetComponent<Bullet>().SetTarget(targetEnemy);
             bullet.GetComponent<Bullet>().SetBulletValue(bulletDamage, bulletSpeed);
+        }
+
+        public void OpenUpgradeUI()
+        {
+            upgradeUI.SetActive(true);
+        }
+
+        public void CloseUpgradeUI()
+        {
+            upgradeUI.SetActive(true);
         }
     }
 }

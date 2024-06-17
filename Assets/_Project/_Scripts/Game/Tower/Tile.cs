@@ -11,7 +11,8 @@ namespace TowerOfDefence.Game
         private Color selectColor = Color.gray;
         private SpriteRenderer sriteRenderer;
         private Color   startColor;
-        private GameObject tower;
+        private GameObject towerObject;
+        private Tower towerScript;
         private void Start()
         {
             sriteRenderer = GetComponent<SpriteRenderer>();
@@ -29,9 +30,15 @@ namespace TowerOfDefence.Game
 
         private void OnMouseDown()
         {
-            print(LevelManager.Instance.IsMouseOverUI);
-            if(LevelManager.Instance.IsMouseOverUI) return;
-            if(tower != null) return;
+            //print(LevelManager.Instance.IsMouseOverUI);
+           
+            if(towerObject != null)
+            {
+                towerScript.OpenUpgradeUI();
+                return;
+            } 
+                
+            if (LevelManager.Instance.IsMouseOverUI) return;
             TowerInfo towerInfo = TowerManager.Instance.GetSelectedTower();
             if (towerInfo.price > LevelManager.Instance.GetCurrencyValue())
             {
@@ -40,7 +47,8 @@ namespace TowerOfDefence.Game
             }
             
             else LevelManager.Instance.CheckAndPurchaseTower(towerInfo.price);
-            tower = Instantiate(towerInfo.prefab, transform.position, Quaternion.identity) as GameObject;
+            towerObject = Instantiate(towerInfo.prefab, transform.position, Quaternion.identity) as GameObject;
+            towerScript =towerObject.GetComponent<Tower>();
         }
 
 
