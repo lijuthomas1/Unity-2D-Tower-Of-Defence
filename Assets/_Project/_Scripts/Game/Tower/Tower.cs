@@ -50,7 +50,7 @@ namespace TowerOfDefence.Game
             //print("FindTargetEnemy");
             RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, towerRange, transform.forward, towerRange, enemyMask);
             if (hits.Length > 0) targetEnemy = hits[0].transform;
-            if (targetEnemy != null) print("target " + targetEnemy.name);
+            //if (targetEnemy != null) print("target " + targetEnemy.name);
         }
 
         private void LookAtEnemy()
