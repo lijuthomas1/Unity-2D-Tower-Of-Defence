@@ -19,8 +19,7 @@ namespace TowerOfDefence.Game
 
         private float remainingEnemies = 0;
         private void Start()
-        {
-            StartWave();
+        {            
             LevelManager.OnEnemyDead += EnemyDead;
         }
         private void OnDestroy()
