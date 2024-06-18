@@ -88,6 +88,11 @@ namespace TowerOfDefence.Game
             else print("Enemy Reach End Point");
             
         }
+
+        public void GameStartRequest()
+        {
+
+        }
         
     }
 }
