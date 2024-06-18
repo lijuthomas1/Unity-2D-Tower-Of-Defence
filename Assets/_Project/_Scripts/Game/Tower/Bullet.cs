@@ -49,10 +49,10 @@ namespace TowerOfDefence.Game
         {
             //Debug.Log("Collision Enter With "+ collision.gameObject.name);
             EnemyHealth health = collision.gameObject.GetComponent<EnemyHealth>();
-            Debug.Log("Collision Enter With " + collision.gameObject.name +" --"+ health);
+            //Debug.Log("Collision Enter With " + collision.gameObject.name +" --"+ health);
             if (health != null)
             {
-                Debug.Log("Do Damage");
+                //Debug.Log("Do Damage");
                 health.DoDamage(damageValue);
             }
             gameObject.SetActive(false);

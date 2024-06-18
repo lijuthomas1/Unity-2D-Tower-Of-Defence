@@ -1,8 +1,6 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TowerOfDefence.Level;
-using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 namespace TowerOfDefence.Game
 {
@@ -41,6 +39,10 @@ namespace TowerOfDefence.Game
             {
                 currentWaveIndex++;
                 StartWave();
+            }
+            else
+            {
+                print("Level Over");
             }
         }
 
