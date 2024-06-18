@@ -102,7 +102,7 @@ namespace TowerOfDefence.Game
 
         public void OnUpgradeClick()
         {
-            //CheckAndDisableUpgradeBtn();
+            CloseUpgradeUI();
             // print("---Level " + towerLevelIndex + " length" + towerUpgradeInfo.Length);
             if (towerLevelIndex >= towerUpgradeInfo.Length - 1) return;
             if (!LevelManager.Instance.CheckAndPurchaseTower(towerUpgradeInfo[towerLevelIndex + 1].price)) return;
