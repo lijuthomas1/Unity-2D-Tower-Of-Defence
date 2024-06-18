@@ -9,36 +9,40 @@ namespace TowerOfDefence.Game
 
         [SerializeField] private Transform startPoint;
         [SerializeField] private List<Transform> pathPoint;
-        [SerializeField] private int defaultCurrency =100;
+        [SerializeField] private int defaultCurrency = 100;
         [SerializeField] private int maxLevelHealth = 7;
         private int currentLevelHealth = 7;
         private int currency;
-        
+
         private static LevelManager instance;
         public static LevelManager Instance => instance;
-        public List<Transform> PathPoints {  get { return pathPoint; } }
-        public Transform GetStartPoint{ get { return startPoint; } }
+        public List<Transform> PathPoints { get { return pathPoint; } }
+        public Transform GetStartPoint { get { return startPoint; } }
         public int GetCurrencyValue() { return currency; }
 
         public static event Action<int> OnCurrencyChange;
         public static event Action OnEnemyDead;
+        public static event Action<GameState> OnGameStateChange;
 
         private bool isMouseOnUI = false;
-        
-        private void Awake ()
+
+        private GameState gameState = GameState.None;
+
+        private void Awake()
         {
             instance = this;
             currency = defaultCurrency;
             OnUpdateCurrency();
         }
-        private void Start() {
+        private void Start()
+        {
             OnUpdateCurrency();
             ResetLevelHealth();
         }
 
         private void ResetLevelHealth()
         {
-            currentLevelHealth  = maxLevelHealth;
+            currentLevelHealth = maxLevelHealth;
         }
         private void OnUpdateCurrency()
         {
@@ -49,16 +53,16 @@ namespace TowerOfDefence.Game
             isMouseOnUI = isOverUI;
         }
 
-        public bool IsMouseOverUI { get {  return isMouseOnUI; } }
-        public void IncreaseCurrency (int amount)
+        public bool IsMouseOverUI { get { return isMouseOnUI; } }
+        public void IncreaseCurrency(int amount)
         {
-            if(amount <= 0) return;
+            if (amount <= 0) return;
             currency += amount;
             OnUpdateCurrency();
         }
-        public  bool  CheckAndPurchaseTower(int amount)
+        public bool CheckAndPurchaseTower(int amount)
         {
-            if(amount <= currency)
+            if (amount <= currency)
             {
                 currency -= amount;
                 OnUpdateCurrency();
@@ -69,7 +73,7 @@ namespace TowerOfDefence.Game
                 Debug.Log("In sufficient balance!");
                 return false;
             }
-            
+
         }
 
         public void UpdateEnemyDead()
@@ -77,22 +81,36 @@ namespace TowerOfDefence.Game
             OnEnemyDead?.Invoke();
         }
 
+        private void GameOver()
+        {
+            gameState = GameState.GameOver;
+            OnGameStateChange?.Invoke(gameState);
+        }
+
         public void OnEnemyReachEndPoint()
         {
             currentLevelHealth--;
-            if(currentLevelHealth <= 0)
+            if (currentLevelHealth <= 0)
             {
                 currentLevelHealth = 0;
                 print("Game over");
+                GameOver();
             }
             else print("Enemy Reach End Point");
-            
+
         }
 
         public void GameStartRequest()
         {
+            ResetLevelHealth();
+            gameState = GameState.GameStarted;
+            OnGameStateChange?.Invoke(gameState);
+            
+        }
+
+        public void GameOverRequest()
+        {
 
         }
-        
     }
 }

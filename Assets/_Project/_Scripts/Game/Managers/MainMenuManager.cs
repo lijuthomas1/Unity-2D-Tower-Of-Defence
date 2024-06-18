@@ -6,12 +6,28 @@ public class MainMenuManager : MonoBehaviour
     private GameObject instructionUI;
     [SerializeField]
     private GameObject mainMenuUI;
-    private static MainMenuManager instance;
-    public static MainMenuManager Instance {  get { return instance; } }
-    private void Awake()
+    [SerializeField]
+    private GameObject gameOverUI;
+
+    private void Start()
     {
-        instance = this;
+        LevelManager.OnGameStateChange += OnGameStateChange;
     }
+    private void OnDestroy()
+    {
+        LevelManager.OnGameStateChange -= OnGameStateChange;
+    }
+
+    private void OnGameStateChange(GameState state)
+    {
+        switch (state)
+        {
+            case GameState.GameOver:
+                gameOverUI.SetActive(true);
+                break;
+        }
+    }
+
 
     public void OnClickExit()
     {
@@ -32,6 +48,16 @@ public class MainMenuManager : MonoBehaviour
         print("OnClickStartButton");
         mainMenuUI.SetActive(false);
         instructionUI.SetActive(false);
+        gameOverUI.SetActive(false);
         LevelManager.Instance.GameStartRequest();
     }
+
+    public void OnShowMenuButton()
+    {
+        mainMenuUI.SetActive(true);
+        instructionUI.SetActive(false);
+        gameOverUI.SetActive(false);
+    }
+
+ 
 }

@@ -21,10 +21,33 @@ namespace TowerOfDefence.Game
         private void Start()
         {            
             LevelManager.OnEnemyDead += EnemyDead;
+            LevelManager.OnGameStateChange += OnGameStateChange;
         }
         private void OnDestroy()
         {
             LevelManager.OnEnemyDead -= EnemyDead;
+            LevelManager.OnGameStateChange -= OnGameStateChange;
+        }
+
+
+
+        private void OnGameStateChange(GameState state)
+        {
+            switch (state)
+            {
+                case GameState.GameStarted:
+                    ResetGame();
+                    StartWave();
+                    break;
+                case GameState.GameOver:
+                    if (nextWaveAutoCouroutine != null) StopCoroutine(nextWaveAutoCouroutine);
+                    break;
+            }
+        }
+
+        private void ResetGame()
+        {
+            currentWaveIndex = 0;
         }
         private void StartWave()
         {
@@ -46,6 +69,7 @@ namespace TowerOfDefence.Game
             else
             {
                 // print("Level Over");
+                LevelManager.Instance.GameOverRequest();
             }
         }
 
