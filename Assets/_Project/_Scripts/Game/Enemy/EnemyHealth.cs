@@ -12,9 +12,17 @@ namespace TowerOfDefence.Game
         {
             currentHealth = maxHealth;
         }
+
+        
         private void OnDisable()
         {
             LevelManager.Instance.UpdateEnemyDead();
+        }
+
+        public void SetEnemyHealth(int health)
+        {
+            if(health < 0) return;
+            currentHealth = health;
         }
 
         public void DoDamage(int damage)

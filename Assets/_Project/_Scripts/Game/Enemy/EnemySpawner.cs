@@ -82,7 +82,8 @@ namespace TowerOfDefence.Game
 
         private void CreateEnemy()
         {
-            Instantiate(enemyObject, LevelManager.Instance.GetStartPoint.position, Quaternion.identity);
+           GameObject enemy =  Instantiate(enemyObject, LevelManager.Instance.GetStartPoint.position, Quaternion.identity);
+            enemy.GetComponent<EnemyHealth>().SetEnemyHealth(currentWaveInfo.enemyHealth);
         }
 
         private void EnemyDead()

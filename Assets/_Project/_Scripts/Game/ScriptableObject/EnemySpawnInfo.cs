@@ -13,6 +13,7 @@ namespace TowerOfDefence.Level
     public struct WaveInfo
     {
         public float spawnTimeInSecond;
-        public int maxEnemyCount; 
+        public int maxEnemyCount;
+        public int enemyHealth; 
     }
 }
