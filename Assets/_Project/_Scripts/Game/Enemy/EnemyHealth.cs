@@ -33,7 +33,7 @@ namespace TowerOfDefence.Game
         private void UpdateHealthUI()
         {
             var healthRatio = (float)currentHealth / (float)maxHealth;
-            print("health " + healthRatio);
+            //print("health " + healthRatio);
             healthSlider.value = healthRatio;
         }
 
