@@ -28,6 +28,7 @@ namespace TowerOfDefence.Game
             }
             else
             {
+                LevelManager.Instance.OnEnemyReachEndPoint();
                 target = null;
             }
         }

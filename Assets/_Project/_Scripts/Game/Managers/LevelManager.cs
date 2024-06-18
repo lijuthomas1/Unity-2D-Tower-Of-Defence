@@ -77,13 +77,16 @@ namespace TowerOfDefence.Game
             OnEnemyDead?.Invoke();
         }
 
-        public void OnEnemyReachEandPoint()
+        public void OnEnemyReachEndPoint()
         {
             currentLevelHealth--;
-            if(currentLevelHealth < 0)
+            if(currentLevelHealth <= 0)
             {
+                currentLevelHealth = 0;
                 print("Game over");
             }
+            else print("Enemy Reach End Point");
+            
         }
         
     }
