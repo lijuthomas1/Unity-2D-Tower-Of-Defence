@@ -18,10 +18,10 @@ MonoBehaviour:
     enemyHealth: 20
   - spawnTimeInSecond: 2
     maxEnemyCount: 10
-    enemyHealth: 30
+    enemyHealth: 25
   - spawnTimeInSecond: 1
     maxEnemyCount: 14
-    enemyHealth: 0
+    enemyHealth: 30
   - spawnTimeInSecond: 1
     maxEnemyCount: 20
     enemyHealth: 40
