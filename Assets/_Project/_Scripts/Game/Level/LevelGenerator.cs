@@ -34,7 +34,7 @@ namespace TowerOfDefence.Level
 
         private void Start()
         {
-            // // print("Start ");
+            // print("Start ");
         }
 
         public void DoCreateLevel()
@@ -63,13 +63,13 @@ namespace TowerOfDefence.Level
             var initYPos = levelTilesArray.GetLength(0) / 2.0f;
             var initXPos = levelTilesArray.GetLength(1) / 2.0f;
             Vector3 tilePos = new Vector3(-(initXPos - 0.5f), (initYPos - 0.5f), 0);
-            //// // print("initYPos " + initYPos + " initXPos " + initXPos);
+            //// print("initYPos " + initYPos + " initXPos " + initXPos);
             int siblingIndex = 0;
             for (int i = 0; i < levelTilesArray.GetLength(0); i++)
             {
                 for (int j = 0; j < levelTilesArray.GetLength(1); j++)
                 {
-                    //// // print("i " + i + " j " + j + " = " +levelTilesArray[i, j]);
+                    //// print("i " + i + " j " + j + " = " +levelTilesArray[i, j]);
                     var tileValue = levelTilesArray[i, j] - 1;
                     if (tileValue >= 0)
                     {

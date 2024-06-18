@@ -42,7 +42,7 @@ namespace TowerOfDefence.Game
             }
             else
             {
-                print("Level Over");
+                // print("Level Over");
             }
         }
 
@@ -74,7 +74,7 @@ namespace TowerOfDefence.Game
                 yield return new WaitForSeconds(currentWaveInfo.spawnTimeInSecond);
                 CreateEnemy();
                 currentEnemyIndex++;
-                // // print("Here");
+                // print("Here");
             }
             yield return null;
             OnWaveEnd();
@@ -88,7 +88,7 @@ namespace TowerOfDefence.Game
 
         private void EnemyDead()
         {
-            print("EnemyDead");
+            // print("EnemyDead");
             remainingEnemies--;
             if(remainingEnemies == 0) {
                 StartNextWave();

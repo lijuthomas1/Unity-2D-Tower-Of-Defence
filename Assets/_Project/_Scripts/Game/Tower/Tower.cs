@@ -86,7 +86,8 @@ namespace TowerOfDefence.Game
 
         private void CheckAndDisableUpgradeBtn()
         {
-            upgradeBtn.interactable = (towerLevelIndex >= towerUpgradeInfo.Length);
+            // print("Level " + towerLevelIndex + " length" + towerUpgradeInfo.Length);
+            upgradeBtn.interactable = !(towerLevelIndex >= towerUpgradeInfo.Length);
         }
 
         public void OpenUpgradeUI()
@@ -102,11 +103,13 @@ namespace TowerOfDefence.Game
         public void OnUpgradeClick()
         {
             //CheckAndDisableUpgradeBtn();
-            if (towerLevelIndex >= towerUpgradeInfo.Length) return;
-            if(!LevelManager.Instance.CheckAndPurchaseTower(towerUpgradeInfo[towerLevelIndex].price)) return;
+            // print("---Level " + towerLevelIndex + " length" + towerUpgradeInfo.Length);
+            if (towerLevelIndex >= towerUpgradeInfo.Length - 1) return;
+            if (!LevelManager.Instance.CheckAndPurchaseTower(towerUpgradeInfo[towerLevelIndex + 1].price)) return;
             towerLevelIndex++;
             CloseUpgradeUI();
-            Debug.Log("towerLevelIndex"+ towerLevelIndex);
+            CheckAndDisableUpgradeBtn();
+            Debug.Log("towerLevelIndex" + towerLevelIndex);
         }
         public void OnCloseClick()
         {
