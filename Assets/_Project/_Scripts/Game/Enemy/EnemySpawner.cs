@@ -23,6 +23,10 @@ namespace TowerOfDefence.Game
             StartWave();
             LevelManager.OnEnemyDead += EnemyDead;
         }
+        private void OnDestroy()
+        {
+            LevelManager.OnEnemyDead -= EnemyDead;
+        }
         private void StartWave()
         {
             if (currentWaveIndex >= waveInfo.waveInfoList.Count) return;
@@ -34,7 +38,7 @@ namespace TowerOfDefence.Game
 
         private void StartNextWave()
         {
-            StopCoroutine(nextWaveAutoCouroutine);
+            if(nextWaveAutoCouroutine !=null) StopCoroutine(nextWaveAutoCouroutine);
             if (currentWaveIndex < waveInfo.waveInfoList.Count)
             {
                 currentWaveIndex++;

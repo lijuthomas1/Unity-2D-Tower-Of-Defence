@@ -10,6 +10,8 @@ namespace TowerOfDefence.Game
         [SerializeField] private Transform startPoint;
         [SerializeField] private List<Transform> pathPoint;
         [SerializeField] private int defaultCurrency =100;
+        [SerializeField] private int maxLevelHealth = 7;
+        private int currentLevelHealth = 7;
         private int currency;
         
         private static LevelManager instance;
@@ -31,6 +33,12 @@ namespace TowerOfDefence.Game
         }
         private void Start() {
             OnUpdateCurrency();
+            ResetLevelHealth();
+        }
+
+        private void ResetLevelHealth()
+        {
+            currentLevelHealth  = maxLevelHealth;
         }
         private void OnUpdateCurrency()
         {
@@ -67,6 +75,15 @@ namespace TowerOfDefence.Game
         public void UpdateEnemyDead()
         {
             OnEnemyDead?.Invoke();
+        }
+
+        public void OnEnemyReachEandPoint()
+        {
+            currentLevelHealth--;
+            if(currentLevelHealth < 0)
+            {
+                print("Game over");
+            }
         }
         
     }
