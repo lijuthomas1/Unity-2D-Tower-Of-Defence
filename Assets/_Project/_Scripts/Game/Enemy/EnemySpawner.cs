@@ -61,14 +61,15 @@ namespace TowerOfDefence.Game
         private void StartNextWave()
         {
             if(nextWaveAutoCouroutine !=null) StopCoroutine(nextWaveAutoCouroutine);
-            if (currentWaveIndex < waveInfo.waveInfoList.Count)
+            print("currentWaveIndex "+ currentWaveIndex +" Max wave " + waveInfo.waveInfoList.Count);
+            if (currentWaveIndex < waveInfo.waveInfoList.Count-1)
             {
                 currentWaveIndex++;
                 StartWave();
             }
             else
             {
-                // print("Level Over");
+                print("Level Over");
                 LevelManager.Instance.GameOverRequest();
             }
         }

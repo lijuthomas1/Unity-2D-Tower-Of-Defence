@@ -110,7 +110,7 @@ namespace TowerOfDefence.Game
 
         public void GameOverRequest()
         {
-
+            GameOver();
         }
     }
 }
