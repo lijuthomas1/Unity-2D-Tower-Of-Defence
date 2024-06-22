@@ -7,12 +7,10 @@ namespace TowerOfDefence.Game
     {
         public string name;
         public int price;
-        public GameObject prefab;
-        public TowerInfo(string name, int price, GameObject prefab)
+        public TowerInfo(string name, int price)
         {
             this.name = name;
             this.price = price;
-            this.prefab = prefab;
         }
     }
 }

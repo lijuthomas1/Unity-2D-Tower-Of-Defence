@@ -6244,6 +6244,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655563874}
   m_CullTransparentMesh: 1
+--- !u!1 &665965903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 665965904}
+  - component: {fileID: 665965905}
+  m_Layer: 0
+  m_Name: ObjectPoolingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &665965904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665965903}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1731882101}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &665965905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665965903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab4616ee1f611f4ea103c4aa9877510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabList:
+  - tag: Tower1
+    prefab: {fileID: 6579606126996769142, guid: c50dcd7650b2e0d4ca231501eb0d96ea, type: 3}
+  - tag: Tower2
+    prefab: {fileID: 6825295906242323129, guid: 1e7e52d627fdd3541812229edeef4fa5, type: 3}
+  - tag: Enemy
+    prefab: {fileID: 838222210576844323, guid: 628f97999b1ad1443b07ee1bfd9aee4e, type: 3}
+  - tag: Bullet
+    prefab: {fileID: 7894419850717056688, guid: 26f82a47bb11e7543b49aad98db54d11, type: 3}
 --- !u!1 &669838104
 GameObject:
   m_ObjectHideFlags: 0
@@ -18559,6 +18612,7 @@ Transform:
   - {fileID: 1056714672}
   - {fileID: 1994362233}
   - {fileID: 116071655}
+  - {fileID: 665965904}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -9,7 +9,7 @@ namespace TowerOfDefence.Game
         [SerializeField]
         private EnemySpawnInfo waveInfo;
         [SerializeField]
-        private GameObject enemyObject;
+        private string enemyObjectTag;
         private WaveInfo currentWaveInfo;
         private int currentWaveIndex = 0;
         private int currentEnemyIndex = 0;
@@ -99,9 +99,10 @@ namespace TowerOfDefence.Game
             currentEnemyIndex = 0;
             while (currentEnemyIndex < currentWaveInfo.maxEnemyCount)
             {
-                yield return new WaitForSeconds(currentWaveInfo.spawnTimeInSecond);
+                
                 CreateEnemy();
                 currentEnemyIndex++;
+                yield return new WaitForSeconds(currentWaveInfo.spawnTimeInSecond);
                 // print("Here");
             }
             yield return null;
@@ -110,7 +111,8 @@ namespace TowerOfDefence.Game
 
         private void CreateEnemy()
         {
-           GameObject enemy =  Instantiate(enemyObject, LevelManager.Instance.GetStartPoint.position, Quaternion.identity);
+            GameObject enemy = ObjectPoolManager.Instance.SpawnObjectFromPool(enemyObjectTag, LevelManager.Instance.GetStartPoint.position, Quaternion.identity);
+            if(enemy == null) return;
             enemy.GetComponent<EnemyHealth>().SetEnemyHealth(currentWaveInfo.enemyHealth);
         }
 

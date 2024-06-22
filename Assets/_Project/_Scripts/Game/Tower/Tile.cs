@@ -47,8 +47,11 @@ namespace TowerOfDefence.Game
             }
             
             else LevelManager.Instance.CheckAndPurchaseTower(towerInfo.price);
-            towerObject = Instantiate(towerInfo.prefab, transform.position, Quaternion.identity) as GameObject;
-            towerScript =towerObject.GetComponent<Tower>();
+            towerObject = ObjectPoolManager.Instance.SpawnObjectFromPool(towerInfo.name, transform.position, Quaternion.identity);
+            if (towerObject != null)
+            {
+                towerScript = towerObject.GetComponent<Tower>();
+            }
         }
 
 
