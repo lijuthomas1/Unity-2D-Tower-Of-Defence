@@ -58,9 +58,9 @@ namespace TowerOfDefence.Game
                 {
                     if (!obj.activeInHierarchy)
                     {
+                        if (!obj.activeInHierarchy) obj.SetActive(true);
                         obj.transform.position = position;
-                        obj.transform.rotation = rotation;
-                        obj.SetActive(true);
+                        obj.transform.rotation = rotation;                        
                         return  obj;
                     }
                 }
@@ -69,6 +69,15 @@ namespace TowerOfDefence.Game
                 return newObj;
             }
             return null;
+        }
+        public void HidePoolObject(string tag)
+        {
+            if (!prefabDictionary.ContainsKey(tag)) return;
+            if (!poolDictionary.ContainsKey(tag)) return;
+            foreach(GameObject obj in poolDictionary[tag])
+            {
+                if (obj.activeInHierarchy) obj.SetActive(false);
+            }
         }
     }
 }

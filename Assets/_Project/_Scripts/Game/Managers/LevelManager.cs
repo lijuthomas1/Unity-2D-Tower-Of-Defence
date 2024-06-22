@@ -6,7 +6,6 @@ namespace TowerOfDefence.Game
 {
     public class LevelManager : MonoBehaviour
     {
-
         [SerializeField] private Transform startPoint;
         [SerializeField] private List<Transform> pathPoint;
         [SerializeField] private int defaultCurrency = 100;
@@ -23,6 +22,7 @@ namespace TowerOfDefence.Game
         public static event Action<int> OnCurrencyChange;
         public static event Action OnEnemyDead;
         public static event Action<GameState> OnGameStateChange;
+        public static event Action ForceReset;
 
         private bool isMouseOnUI = false;
 
@@ -30,7 +30,17 @@ namespace TowerOfDefence.Game
 
         private void Awake()
         {
+            print("Level Manager Awake");
+            if(instance != null)
+            {
+                print("Level Manager Instance Not Null");
+            }
             instance = this;
+            ResetCurrency();
+        }
+        
+        private void ResetCurrency()
+        {
             currency = defaultCurrency;
             OnUpdateCurrency();
         }
@@ -85,6 +95,7 @@ namespace TowerOfDefence.Game
         {
             gameState = GameState.GameOver;
             OnGameStateChange?.Invoke(gameState);
+            ForceReset?.Invoke();
         }
 
         public void OnEnemyReachEndPoint()
@@ -102,10 +113,10 @@ namespace TowerOfDefence.Game
 
         public void GameStartRequest()
         {
+            ResetCurrency();
             ResetLevelHealth();
             gameState = GameState.GameStarted;
-            OnGameStateChange?.Invoke(gameState);
-            
+            OnGameStateChange?.Invoke(gameState);            
         }
 
         public void GameOverRequest()

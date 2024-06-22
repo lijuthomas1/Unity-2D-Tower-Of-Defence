@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using TowerOfDefence.Level;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 namespace TowerOfDefence.Game
 {
@@ -15,6 +17,7 @@ namespace TowerOfDefence.Game
         private int currentEnemyIndex = 0;
         private IEnumerator nextWaveAutoCouroutine;
         private IEnumerator currentWaveCouroutine;
+        private List<GameObject> enemyList = new List<GameObject>();
         
 
         private float remainingEnemies = 0;
@@ -22,11 +25,13 @@ namespace TowerOfDefence.Game
         {            
             LevelManager.OnEnemyDead += EnemyDead;
             LevelManager.OnGameStateChange += OnGameStateChange;
+            LevelManager.ForceReset += ForceReset;
         }
         private void OnDestroy()
         {
             LevelManager.OnEnemyDead -= EnemyDead;
             LevelManager.OnGameStateChange -= OnGameStateChange;
+            LevelManager.ForceReset -= ForceReset;
         }
 
 
@@ -40,14 +45,37 @@ namespace TowerOfDefence.Game
                     StartWave();
                     break;
                 case GameState.GameOver:
-                    if (nextWaveAutoCouroutine != null) StopCoroutine(nextWaveAutoCouroutine);
+                   
                     break;
             }
+        }
+
+
+        private void GameOver()
+        {
+            if (nextWaveAutoCouroutine != null) 
+                StopCoroutine(nextWaveAutoCouroutine);
+            HideAllEnemies();
+
+        }
+
+        private void HideAllEnemies()
+        {
+            foreach(GameObject enemy in enemyList)
+            {
+                enemy.SetActive(false);
+            }
+        }
+
+        private void ForceReset()
+        {
+            HideAllEnemies();
         }
 
         private void ResetGame()
         {
             currentWaveIndex = 0;
+            HideAllEnemies();
         }
         private void StartWave()
         {

@@ -11,12 +11,31 @@ namespace TowerOfDefence.Game
         private Color selectColor = Color.gray;
         private SpriteRenderer sriteRenderer;
         private Color   startColor;
+        [SerializeField]
         private GameObject towerObject;
         private Tower towerScript;
+
+        private void Awake()
+        {
+            print("Tile Awake");
+            LevelManager.ForceReset += ResetTile;
+        }
         private void Start()
         {
+            print("Tile Start");
+
             sriteRenderer = GetComponent<SpriteRenderer>();
-            startColor = sriteRenderer.color;   
+            startColor = sriteRenderer.color;           
+        }
+        private void OnDestroy()
+        {
+            LevelManager.ForceReset -= ResetTile;
+        }
+
+        private void ResetTile()
+        {
+            if(towerObject != null) towerObject.SetActive(false);
+            towerObject = null;
         }
 
         private void OnMouseEnter()

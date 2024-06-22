@@ -428,6 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &66937505
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &76247441
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,6 +826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &77695907
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,6 +952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &96675646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,6 +1078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &100588896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,6 +1474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &116071654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,6 +1647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &135280468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,6 +1773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &155365761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,6 +1899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &160852187
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,6 +2025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &163839672
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,6 +2182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &212188700
 GameObject:
   m_ObjectHideFlags: 0
@@ -2432,6 +2443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &227234032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2557,6 +2569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &233918610
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,6 +2695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &234701968
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,6 +2931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &257539943
 GameObject:
   m_ObjectHideFlags: 0
@@ -3042,6 +3057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &257848053
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,6 +3183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &285654348
 GameObject:
   m_ObjectHideFlags: 0
@@ -3292,6 +3309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &293707855
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,6 +3435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &302490494
 GameObject:
   m_ObjectHideFlags: 0
@@ -3542,6 +3561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &315443434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3667,6 +3687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &316514000
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,6 +3947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &343672785
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,6 +4073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &362989971
 GameObject:
   m_ObjectHideFlags: 0
@@ -4176,6 +4199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &364162821
 GameObject:
   m_ObjectHideFlags: 0
@@ -4301,6 +4325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &385298301
 GameObject:
   m_ObjectHideFlags: 0
@@ -4426,6 +4451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &386109495
 GameObject:
   m_ObjectHideFlags: 0
@@ -4551,6 +4577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &437692360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4813,6 +4840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &492211141
 GameObject:
   m_ObjectHideFlags: 0
@@ -4969,6 +4997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &502945917
 GameObject:
   m_ObjectHideFlags: 0
@@ -5094,6 +5123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &503583058
 GameObject:
   m_ObjectHideFlags: 0
@@ -5318,6 +5348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5527,6 +5558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &588309597
 GameObject:
   m_ObjectHideFlags: 0
@@ -5652,6 +5684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &600935114
 GameObject:
   m_ObjectHideFlags: 0
@@ -5777,6 +5810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &602645022
 GameObject:
   m_ObjectHideFlags: 0
@@ -5902,6 +5936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &630006202
 GameObject:
   m_ObjectHideFlags: 0
@@ -6027,6 +6062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &637493388
 GameObject:
   m_ObjectHideFlags: 0
@@ -6152,6 +6188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &655563874
 GameObject:
   m_ObjectHideFlags: 0
@@ -6557,6 +6594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &696638118
 GameObject:
   m_ObjectHideFlags: 0
@@ -6682,6 +6720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &701477055
 GameObject:
   m_ObjectHideFlags: 0
@@ -6807,6 +6846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &701799590
 GameObject:
   m_ObjectHideFlags: 0
@@ -7128,6 +7168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &809724232
 GameObject:
   m_ObjectHideFlags: 0
@@ -7253,6 +7294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &811319174
 GameObject:
   m_ObjectHideFlags: 0
@@ -7378,6 +7420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &841390552
 GameObject:
   m_ObjectHideFlags: 0
@@ -7503,6 +7546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &846681412
 GameObject:
   m_ObjectHideFlags: 0
@@ -7628,6 +7672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &891237906
 GameObject:
   m_ObjectHideFlags: 0
@@ -7753,6 +7798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &893951745
 GameObject:
   m_ObjectHideFlags: 0
@@ -7878,6 +7924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &903284220
 GameObject:
   m_ObjectHideFlags: 0
@@ -8034,6 +8081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &917520322
 GameObject:
   m_ObjectHideFlags: 0
@@ -8159,6 +8207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &922089846
 GameObject:
   m_ObjectHideFlags: 0
@@ -8419,6 +8468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &942659507
 GameObject:
   m_ObjectHideFlags: 0
@@ -8544,6 +8594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &946219968
 GameObject:
   m_ObjectHideFlags: 0
@@ -8669,6 +8720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &988950700
 GameObject:
   m_ObjectHideFlags: 0
@@ -8794,6 +8846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1001570109
 GameObject:
   m_ObjectHideFlags: 0
@@ -8919,6 +8972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1003206416
 GameObject:
   m_ObjectHideFlags: 0
@@ -9044,6 +9098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1003777737
 GameObject:
   m_ObjectHideFlags: 0
@@ -9169,6 +9224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1020482914
 GameObject:
   m_ObjectHideFlags: 0
@@ -9294,6 +9350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1025834848
 GameObject:
   m_ObjectHideFlags: 0
@@ -9419,6 +9476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1026230879
 GameObject:
   m_ObjectHideFlags: 0
@@ -9544,6 +9602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1035444963
 GameObject:
   m_ObjectHideFlags: 0
@@ -9669,6 +9728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1041664166
 GameObject:
   m_ObjectHideFlags: 0
@@ -9794,6 +9854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1045717943
 GameObject:
   m_ObjectHideFlags: 0
@@ -9919,6 +9980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1055184087
 GameObject:
   m_ObjectHideFlags: 0
@@ -10044,6 +10106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1056714671
 GameObject:
   m_ObjectHideFlags: 0
@@ -10091,10 +10154,8 @@ MonoBehaviour:
   towerInfos:
   - name: Tower1
     price: 100
-    prefab: {fileID: 6579606126996769142, guid: c50dcd7650b2e0d4ca231501eb0d96ea, type: 3}
   - name: Tower2
     price: 200
-    prefab: {fileID: 6825295906242323129, guid: 1e7e52d627fdd3541812229edeef4fa5, type: 3}
 --- !u!1 &1088936901
 GameObject:
   m_ObjectHideFlags: 0
@@ -10251,6 +10312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1101855592
 GameObject:
   m_ObjectHideFlags: 0
@@ -10376,6 +10438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1104261855
 GameObject:
   m_ObjectHideFlags: 0
@@ -10501,6 +10564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1107804447
 GameObject:
   m_ObjectHideFlags: 0
@@ -10626,6 +10690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1125511836
 GameObject:
   m_ObjectHideFlags: 0
@@ -10751,6 +10816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1127820677
 GameObject:
   m_ObjectHideFlags: 0
@@ -10876,6 +10942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1130072947
 GameObject:
   m_ObjectHideFlags: 0
@@ -11031,7 +11098,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1139679176
 MonoBehaviour:
@@ -11252,6 +11319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1158302450
 GameObject:
   m_ObjectHideFlags: 0
@@ -11512,6 +11580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1171951477
 GameObject:
   m_ObjectHideFlags: 0
@@ -11637,6 +11706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1179146356
 GameObject:
   m_ObjectHideFlags: 0
@@ -11793,6 +11863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1185827947
 GameObject:
   m_ObjectHideFlags: 0
@@ -11918,6 +11989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1186456902
 GameObject:
   m_ObjectHideFlags: 0
@@ -12043,6 +12115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1210562482
 GameObject:
   m_ObjectHideFlags: 0
@@ -12168,6 +12241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1219940078
 GameObject:
   m_ObjectHideFlags: 0
@@ -12466,6 +12540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1267486084
 GameObject:
   m_ObjectHideFlags: 0
@@ -12591,6 +12666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1267930277
 GameObject:
   m_ObjectHideFlags: 0
@@ -12716,6 +12792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1273135607
 GameObject:
   m_ObjectHideFlags: 0
@@ -12841,6 +12918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1274341759
 GameObject:
   m_ObjectHideFlags: 0
@@ -12966,6 +13044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1289059775
 GameObject:
   m_ObjectHideFlags: 0
@@ -13091,6 +13170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1292646666
 GameObject:
   m_ObjectHideFlags: 0
@@ -13216,6 +13296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1294336080
 GameObject:
   m_ObjectHideFlags: 0
@@ -13341,6 +13422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1295931134
 GameObject:
   m_ObjectHideFlags: 0
@@ -13466,6 +13548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1306240032
 GameObject:
   m_ObjectHideFlags: 0
@@ -13591,6 +13674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1323870411
 GameObject:
   m_ObjectHideFlags: 0
@@ -13798,6 +13882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1341984032
 GameObject:
   m_ObjectHideFlags: 0
@@ -13923,6 +14008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1349463208
 GameObject:
   m_ObjectHideFlags: 0
@@ -14048,6 +14134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1360114675
 GameObject:
   m_ObjectHideFlags: 0
@@ -14442,6 +14529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1372049149
 GameObject:
   m_ObjectHideFlags: 0
@@ -14598,6 +14686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1386619742
 GameObject:
   m_ObjectHideFlags: 0
@@ -14723,6 +14812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1419389267
 GameObject:
   m_ObjectHideFlags: 0
@@ -14848,6 +14938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1439213385
 GameObject:
   m_ObjectHideFlags: 0
@@ -15004,6 +15095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1462142115
 GameObject:
   m_ObjectHideFlags: 0
@@ -15129,6 +15221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1471386213
 GameObject:
   m_ObjectHideFlags: 0
@@ -15254,6 +15347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1473360639
 GameObject:
   m_ObjectHideFlags: 0
@@ -15379,6 +15473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1488988851
 GameObject:
   m_ObjectHideFlags: 0
@@ -15504,6 +15599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1489703987
 GameObject:
   m_ObjectHideFlags: 0
@@ -15629,6 +15725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1496002308
 GameObject:
   m_ObjectHideFlags: 0
@@ -15754,6 +15851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1497485971
 GameObject:
   m_ObjectHideFlags: 0
@@ -15879,6 +15977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1502474898
 GameObject:
   m_ObjectHideFlags: 0
@@ -16004,6 +16103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1504475143
 GameObject:
   m_ObjectHideFlags: 0
@@ -16301,6 +16401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1517418686
 GameObject:
   m_ObjectHideFlags: 0
@@ -16426,6 +16527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1534725284
 GameObject:
   m_ObjectHideFlags: 0
@@ -16551,6 +16653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1537403566
 GameObject:
   m_ObjectHideFlags: 0
@@ -16676,6 +16779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1546831970
 GameObject:
   m_ObjectHideFlags: 0
@@ -16832,6 +16936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1562279624
 GameObject:
   m_ObjectHideFlags: 0
@@ -16957,6 +17062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1567869489
 GameObject:
   m_ObjectHideFlags: 0
@@ -17113,6 +17219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1578596070
 GameObject:
   m_ObjectHideFlags: 0
@@ -17238,6 +17345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1580411054
 GameObject:
   m_ObjectHideFlags: 0
@@ -17498,6 +17606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1585521265
 GameObject:
   m_ObjectHideFlags: 0
@@ -17623,6 +17732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1587622908
 GameObject:
   m_ObjectHideFlags: 0
@@ -17748,6 +17858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1600848478
 GameObject:
   m_ObjectHideFlags: 0
@@ -17904,6 +18015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1626831395
 GameObject:
   m_ObjectHideFlags: 0
@@ -18029,6 +18141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1639238413
 GameObject:
   m_ObjectHideFlags: 0
@@ -18185,6 +18298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1665165110
 GameObject:
   m_ObjectHideFlags: 0
@@ -18579,6 +18693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1731882100
 GameObject:
   m_ObjectHideFlags: 0
@@ -18741,6 +18856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1760745733
 GameObject:
   m_ObjectHideFlags: 0
@@ -18866,6 +18982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1771924493
 GameObject:
   m_ObjectHideFlags: 0
@@ -19125,6 +19242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1792293601
 GameObject:
   m_ObjectHideFlags: 0
@@ -19250,6 +19368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1803452472
 GameObject:
   m_ObjectHideFlags: 0
@@ -19375,6 +19494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1818871956
 GameObject:
   m_ObjectHideFlags: 0
@@ -19610,6 +19730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1836719793
 GameObject:
   m_ObjectHideFlags: 0
@@ -19735,6 +19856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1842179413
 GameObject:
   m_ObjectHideFlags: 0
@@ -19860,6 +19982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1862473248
 GameObject:
   m_ObjectHideFlags: 0
@@ -19985,6 +20108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1863595931
 GameObject:
   m_ObjectHideFlags: 0
@@ -20110,6 +20234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1881159483
 GameObject:
   m_ObjectHideFlags: 0
@@ -20235,6 +20360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1890382735
 GameObject:
   m_ObjectHideFlags: 0
@@ -20360,6 +20486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1908837462
 GameObject:
   m_ObjectHideFlags: 0
@@ -20619,6 +20746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1920602086
 GameObject:
   m_ObjectHideFlags: 0
@@ -20744,6 +20872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1937488130
 GameObject:
   m_ObjectHideFlags: 0
@@ -20869,6 +20998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1946178552
 GameObject:
   m_ObjectHideFlags: 0
@@ -20994,6 +21124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1948595577
 GameObject:
   m_ObjectHideFlags: 0
@@ -21119,6 +21250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1952268792
 GameObject:
   m_ObjectHideFlags: 0
@@ -21244,6 +21376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1961189732
 GameObject:
   m_ObjectHideFlags: 0
@@ -21504,6 +21637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1985650157
 GameObject:
   m_ObjectHideFlags: 0
@@ -21629,6 +21763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &1994362232
 GameObject:
   m_ObjectHideFlags: 0
@@ -21674,7 +21809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveInfo: {fileID: 11400000, guid: af8dc4d3b29f8764cb3ea42d6d92a73a, type: 2}
-  enemyObject: {fileID: 838222210576844323, guid: 628f97999b1ad1443b07ee1bfd9aee4e, type: 3}
+  enemyObjectTag: Enemy
 --- !u!1 &1997355403
 GameObject:
   m_ObjectHideFlags: 0
@@ -21800,6 +21935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &2003690199
 GameObject:
   m_ObjectHideFlags: 0
@@ -21925,6 +22061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &2006657683
 GameObject:
   m_ObjectHideFlags: 0
@@ -22050,6 +22187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &2011032360
 GameObject:
   m_ObjectHideFlags: 0
@@ -22175,6 +22313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &2021253344
 GameObject:
   m_ObjectHideFlags: 0
@@ -22300,6 +22439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &2041881711
 GameObject:
   m_ObjectHideFlags: 0
@@ -22425,6 +22565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &2042860605
 GameObject:
   m_ObjectHideFlags: 0
@@ -22550,6 +22691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &2052962330
 GameObject:
   m_ObjectHideFlags: 0
@@ -22675,6 +22817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &2063942046
 GameObject:
   m_ObjectHideFlags: 0
@@ -22800,6 +22943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &2083735563
 GameObject:
   m_ObjectHideFlags: 0
@@ -22925,6 +23069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &2088958785
 GameObject:
   m_ObjectHideFlags: 0
@@ -23144,6 +23289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &2116972131
 GameObject:
   m_ObjectHideFlags: 0
@@ -23314,6 +23460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  towerObject: {fileID: 0}
 --- !u!1 &2139570316
 GameObject:
   m_ObjectHideFlags: 0

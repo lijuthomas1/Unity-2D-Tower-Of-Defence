@@ -16,7 +16,7 @@ namespace TowerOfDefence.Game
         private void Update()
         {
             // print(IsPointerOverUIElement() ? "Over UI" : "Not over UI");
-            LevelManager.Instance.UpdateMouseOverUI(IsPointerOverUIElement());
+            if (LevelManager.Instance != null) LevelManager.Instance.UpdateMouseOverUI(IsPointerOverUIElement());
         }
 
 

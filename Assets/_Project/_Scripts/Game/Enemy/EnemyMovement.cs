@@ -16,9 +16,18 @@ namespace TowerOfDefence.Game
         private void OnEnable()
         {
             ResetPathTarget();
+            LevelManager.ForceReset += ResetTile;
         }
-        
-    
+        private void OnDisable()
+        {
+            LevelManager.ForceReset -= ResetTile;
+        }
+        private void ResetTile()
+        {
+            gameObject.SetActive(false);
+        }
+
+
 
         private void SetCurrentTargetPoint()
         {
@@ -41,11 +50,11 @@ namespace TowerOfDefence.Game
 
         private void LookTowardsTarget()
         {
-            if(target == null)  return;
+            if (target == null) return;
             Vector3 look = transform.InverseTransformPoint(target.position);
-            float angle = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90 ;
+            float angle = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90;
 
-            transform.Rotate(0,0, angle);
+            transform.Rotate(0, 0, angle);
         }
         private void ResetPathTarget()
         {
@@ -64,12 +73,13 @@ namespace TowerOfDefence.Game
             }
 
             if (target == null)
-            {   this.gameObject.SetActive(false);
+            {
+                this.gameObject.SetActive(false);
                 return;
             }
-                
+
             direction = (target.position - this.transform.position).normalized;
-            
+
             this.transform.position += direction * Time.deltaTime;
         }
     }

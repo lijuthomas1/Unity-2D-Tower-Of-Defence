@@ -31,7 +31,19 @@ namespace TowerOfDefence.Game
         private void OnEnable()
         {
             upgradeBtn.interactable = true;
+            LevelManager.ForceReset += ResetTower;
         }
+        private void OnDisable()
+        {
+            LevelManager.ForceReset -= ResetTower;
+        }
+        private void ResetTower()
+        {
+            gameObject.SetActive(false);
+        }
+
+
+
         private void FixedUpdate()
         {
             if (targetEnemy != null)
@@ -40,6 +52,8 @@ namespace TowerOfDefence.Game
         }
         private void Update()
         {
+            
+
             LookAtEnemy();
             CheckBulletFire();
         }
